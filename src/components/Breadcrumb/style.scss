@@ -1,0 +1,38 @@
+@import '../../sassStyles/variables';
+
+#breadcrumb {
+  margin: 15px 80px;
+
+  .breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+
+    .search-content {
+      font-weight: bold;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+
+    li {
+      display: inline;
+      font-size: 15px;
+
+      & + li {
+        &:before {
+          padding: 8px;
+          color: black;
+          content: '\00a0-\00a0';
+        }
+      }
+
+      a {
+        color: #1a94ff;
+        text-decoration: none;
+
+        &:hover {
+          color: #004f94d0;
+        }
+      }
+    }
+  }
+}

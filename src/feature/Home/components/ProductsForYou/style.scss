@@ -1,0 +1,50 @@
+@import '../../../../sassStyles/variables';
+
+#products-for-you {
+  margin: 15px 80px;
+  border-radius: 15px 15px 0 0;
+  background-color: #f4f4f4;
+
+  h3 {
+    color: $black;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 15px 11px;
+    border-bottom: 1px solid $primary-color;
+  }
+
+  .products-for-you-list {
+    padding: 12px 0 12px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .product-for-you-item {
+      background-color: $white;
+      border-radius: 10px;
+      padding: 12px;
+      margin: 0 10px 20px 10px;
+      width: calc(100% / 5 - 20px);
+      height: 390px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+
+      &:hover {
+        .product-image {
+          transform: scale(1.1);
+        }
+      }
+
+      @media (min-width: 1200px) and (max-width: 1399.98px) {
+        height: 324px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        width: calc(100% / 4 - 20px);
+        height: 321px;
+      }
+    }
+  }
+}
+
+// Pagination

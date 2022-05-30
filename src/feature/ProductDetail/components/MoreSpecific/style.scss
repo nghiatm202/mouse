@@ -1,0 +1,61 @@
+@import '../../../../sassStyles/variables';
+
+#more-specific {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 80px 25px 80px;
+  background-color: $white;
+  padding: 15px;
+
+  .product-description {
+    width: 100%;
+
+    h2 {
+      color: rgba(0, 0, 0, 0.87);
+      font-size: 20px;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.02);
+      margin-bottom: 19px;
+    }
+
+    span {
+      width: 95%;
+      font-size: 15px;
+      margin-left: 16px;
+      display: block;
+    }
+  }
+
+  .product-detail-table {
+    width: 100%;
+
+    h2 {
+      color: rgba(0, 0, 0, 0.87);
+      font-size: 20px;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.02);
+      margin-bottom: 10px;
+    }
+
+    .detail-table {
+      border-collapse: collapse;
+      width: 25%;
+      font-size: 13.5px;
+      margin-left: 8px;
+      margin-bottom: 20px;
+    }
+
+    .detail-table td {
+      cursor: default;
+      padding: 8px;
+    }
+
+    .detail-table tr:nth-child(even) {
+      background-color: #f6f6f6;
+    }
+
+    .detail-table tr:hover {
+      background-color: #ddd;
+    }
+  }
+}

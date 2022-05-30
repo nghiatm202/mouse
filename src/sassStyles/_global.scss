@@ -1,0 +1,56 @@
+@import './variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: rgb(248, 248, 252);
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: black;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 3rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none !important;
+}

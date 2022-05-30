@@ -1,0 +1,222 @@
+@import '../../../../sassStyles/variables';
+
+.cart-has-product-wrapper {
+  padding: 0 80px;
+  cursor: default;
+  display: flex;
+
+  .cart-product-content {
+    width: 70%;
+    .cart-menu {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      background-color: #fff;
+      padding: 22px;
+      border-bottom: 1px solid rgb(234, 234, 234);
+
+      .cart-brand-name {
+        display: flex;
+        align-items: center;
+        width: 56%;
+
+        h3 {
+          font-size: 15px;
+          color: rgb(51, 51, 51);
+          transition: color 0.2s ease 0s;
+
+          &:hover {
+            color: #1a94ffbd;
+          }
+        }
+
+        i {
+          color: #30cd60;
+          font-size: 16px;
+          margin-left: 8px;
+          margin-top: -0.5px;
+        }
+      }
+
+      .cart-title {
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        font-weight: 500;
+        flex: 1;
+        justify-content: space-between;
+
+        .unit-price-title {
+          margin-left: 4px;
+        }
+        .quantity-title {
+          padding-left: 8px;
+        }
+        .into-money-title {
+          margin-right: -2px;
+        }
+      }
+    }
+
+    .cart-wrapper {
+      display: flex;
+      width: 100%;
+
+      .cart-content {
+        padding: 10px;
+        background-color: #fff;
+        display: flex;
+        width: 54%;
+
+        img {
+          height: 200px;
+          width: 200px;
+          border: 1px solid rgb(228, 229, 240);
+        }
+
+        .item-name {
+          font-size: 13px;
+          color: rgb(67, 70, 87);
+          width: 25%;
+          margin: 6px 0 0 10px;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+
+      .cart-details {
+        background-color: $white;
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        padding: 0 10px;
+
+        span {
+          font-size: 15px;
+          font-weight: 700;
+          margin-top: 20px;
+        }
+
+        .unit-price {
+          color: rgb(67, 70, 87);
+        }
+
+        .quantity-input-wrapper {
+          margin-top: 8px;
+
+          .quantity-input {
+            width: 42px;
+            height: 28px;
+            font-size: 15px;
+            text-align: center;
+            border: 1px solid #ececec;
+          }
+
+          .increase,
+          .decrease {
+            padding: 5.3px;
+            color: #959595;
+            background-color: #fff;
+            outline: none;
+            border: 1px solid #ececec;
+            cursor: pointer;
+          }
+
+          .decrease:disabled {
+            cursor: not-allowed;
+          }
+
+          .remove-element {
+            color: rgb(25, 144, 255);
+            font-size: 13px;
+            font-weight: 400;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 7px;
+
+            &:hover {
+              color: rgb(218, 67, 67);
+            }
+          }
+        }
+
+        .into-money {
+          color: $primary-color;
+          width: 78px;
+          text-align: right;
+          padding-right: 4px;
+        }
+      }
+    }
+  }
+
+  .payment {
+    width: 30%;
+    background-color: $white;
+    padding: 1rem;
+    height: 196px;
+    margin-left: 16px;
+
+    .VAT-included {
+      font-size: 14px;
+      color: rgb(132, 135, 136);
+      text-align: right;
+      line-height: 14px;
+      flex-direction: row-reverse;
+      margin: 6px 0;
+      display: flex;
+    }
+
+    h5 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 7px;
+    }
+
+    .provisional,
+    .into-money {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: rgb(132, 135, 136);
+      font-size: 14px;
+    }
+
+    .provisional {
+      .provisional-price {
+        color: #333333;
+        font-weight: 700;
+      }
+    }
+
+    .into-money {
+      padding-top: 5px;
+
+      .into-money-price {
+        color: #eb2101;
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+
+    .payment-btn {
+      .payment-btn-no-login {
+        width: 100%;
+        border-radius: 4px;
+        border: none;
+        background-color: $primary-color;
+        color: $white;
+        padding: 0.4rem 1rem;
+        cursor: pointer;
+        font-size: 12.5px;
+        line-height: 16px;
+
+        span {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

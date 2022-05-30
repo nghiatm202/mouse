@@ -1,0 +1,75 @@
+@import '../../../../sassStyles/variables';
+
+#carousel-banners {
+  padding: 15px 80px;
+  display: flex;
+  gap: 5px;
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+
+  .carousel-inner-1 {
+    width: 70%;
+    flex-shrink: 0;
+
+    .carousel-item {
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 291px;
+      object-fit: cover;
+    }
+
+    .slick-next {
+      right: 20px;
+    }
+
+    .slick-prev {
+      left: 20px;
+      z-index: 3;
+    }
+
+    .slick-dots {
+      bottom: 12px;
+    }
+
+    .slick-dots li button:before {
+      font-size: 12px;
+    }
+
+    .slick-dots li.slick-active button:before {
+      color: $white;
+    }
+
+    .slick-dots li button:before {
+      color: $white;
+    }
+  }
+
+  .carousel-inner-2 {
+    width: 30%;
+    height: 291px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+
+    .carousel-item {
+      width: 100%;
+      height: 50%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .carousel-item-img {
+        padding-bottom: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+@import '../../../../sassStyles/variables';
+
+#trending-products {
+  margin: 0 80px;
+  border-radius: 15px 15px 0 0;
+  background-image: linear-gradient(315deg, #ec9f05 0%, #ff4e00 74%);
+
+  h3 {
+    color: $white;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 15px 11px;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.787);
+  }
+
+  .trending-products-list {
+    padding: 12px 0 32px;
+    display: flex;
+    justify-content: space-between;
+
+    .slick-next {
+      right: 20px;
+    }
+
+    .slick-prev {
+      left: 20px;
+      z-index: 3;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+      color: $primary-color;
+    }
+
+    .trending-product-item {
+      background-color: $white;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 0 10px;
+      width: 252px !important;
+      display: block !important;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: 1200px) and (max-width: 1399.98px) {
+        width: 183px !important;
+        height: 280px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        width: 154px !important;
+        height: 257px;
+      }
+    }
+  }
+}
+
+.product-image {
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.product-name {
+  z-index: 2;
+  font-size: 14px;
+  color: $black;
+  overflow: hidden;
+  display: -webkit-box;
+  height: 34px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    margin-bottom: 6px;
+  }
+}
+
+.product-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  svg {
+    margin-top: -3.6px;
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      margin-bottom: 2.7px;
+    }
+  }
+}
+
+.product-price-initial {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -18px;
+
+  p {
+    color: #82869e;
+    font-size: 14px;
+    text-decoration-line: line-through;
+    margin-right: 10px;
+
+    span {
+      text-decoration-line: underline;
+    }
+  }
+
+  .sale-off {
+    color: $primary-color;
+    font-size: 14px;
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    margin-top: -6px;
+    justify-content: space-between;
+  }
+}
+
+.product-price {
+  color: $primary-color;
+  font-size: 17px;
+  font-weight: 700;
+
+  span {
+    text-decoration-line: underline;
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 15px;
+  }
+}
