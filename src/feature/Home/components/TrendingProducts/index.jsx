@@ -30,7 +30,6 @@ function TrendingProducts(props) {
                 <Link
                   to={`/productdetail?itemId=${item.id}`}
                   key={item.id}
-                  href='#'
                   className='trending-product-item'
                 >
                   <img

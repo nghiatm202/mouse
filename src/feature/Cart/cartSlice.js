@@ -51,6 +51,7 @@ const cartSlice = createSlice({
 })
 
 const { actions, reducer } = cartSlice
+console.log(reducer)
 export const {
   showMiniCart,
   hideMiniCart,

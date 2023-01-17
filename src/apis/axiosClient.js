@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const axiosClient = axios.create({
-  baseURL: 'http://localhost:3004/',
+  baseURL: 'https://data-mouse-ecommerce.herokuapp.com/',
   headers: {
     'Content-Type': 'application/json',
   },
